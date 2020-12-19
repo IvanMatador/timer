@@ -1,12 +1,16 @@
+import { HhmmssPipe } from './hhmmss.pipe';
 import { Component } from '@angular/core';
 import { timer } from 'rxjs';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [ HhmmssPipe ]
 })
 export class AppComponent {
+
+  title = 'timer'
+
   value: number = 0
   isWait: boolean = false
   timeOut: boolean = true

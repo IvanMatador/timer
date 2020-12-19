@@ -11,8 +11,9 @@ import { HhmmssPipe } from './hhmmss.pipe';
   ],
   imports: [
     BrowserModule
-  ],
-  providers: [],
+    ],
+  exports: [ HhmmssPipe ],
+  providers: [ HhmmssPipe ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

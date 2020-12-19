@@ -10,5 +10,4 @@ export class HhmmssPipe implements PipeTransform {
     let toDate = new Date(value)
     return toDate;
   }
-
 }
