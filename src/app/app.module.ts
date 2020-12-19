@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HhmmssPipe } from './hhmmss.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HhmmssPipe
   ],
   imports: [
     BrowserModule
