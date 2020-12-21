@@ -52,7 +52,7 @@ export class AppComponent {
   }
 
   frizeTimer(value) {
-    setTimeout(() => {
+    timer(300).subscribe(() => {
       this.timeOut = true
       if (this.clicksCount > 1) {
         this.waitTimer(value)
@@ -60,7 +60,7 @@ export class AppComponent {
       } else {
         this.stopTimer()
       }
-    }, 300)
+    })
   }
 
   waitTimer(value) {
